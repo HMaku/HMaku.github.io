@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lunchlab-WadaBento</title>
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+	
+	body {
+		font-family: "Figtree", serif; font-size: 16px; margin: 0; padding: 0; color: rgba(50,39,20,1.00); margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no padding */}
+	.logo {
+		display: flex; align-items: center;}
+	.logo img {
+		height: 46px; margin-right: 20px; filter: brightness(0) invert(1); /* Makes the logo white */}
+	.company-name {
+        font-weight: 600; font-size: 30px; color: #F3F1E5; }
+    .navbar {
+        display: flex; justify-content: space-between; align-items: center;
+        background-color: rgba(146,117,76,0.83); 
+        font-size: 20px; font-weight: 200; color: #F3F1E5;
+        height: 80px; padding: 0 20px;
+        position: fixed; width: 100%; z-index: 999; }
+	.menu {
+		display: flex;}
+	.menu a {
+        color: #F3F1E5; text-decoration: none;
+        padding: 10px 20px; transition: background-color 0.4s ease-in-out; margin-right: 30px;}  
+	.menu a:hover {background-color: #B5B557}
+	
+	.content {
+    min-height: 100vh; /* Make sure content is at least the height of the viewport */
+    padding-top: 80px; /* Space for the fixed navbar */
+    background: linear-gradient(0deg, rgba(146,117,76,0.83), rgba(255, 204, 0, 0.2)), 
+                url("img/background_green_horizontal.jpg") no-repeat center center;
+    background-size: cover; /* Cover the entire area */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; /* Allow content to start from the top */
+    overflow: hidden; /* Prevent overflow */
+}
+	.content h1 {
+		font-size: 36px; font-weight: 100; line-height: 1.5; text-shadow: 0 0 10px rgba(146,117,76,0.83); text-align: center;}
+	.content h2 {
+		font-size: 22px; font-weight: 200; line-height: 1.5; padding: 0 200px; text-shadow: 0 0 10px rgba(146,117,76,0.83); }
+	.content h2 .highlight {
+    	background-color: rgba(181, 181, 87, 0.72);
+    	padding: 0 10px; /* Optional: Add some horizontal padding for spacing */}
+	.content h3 {
+		font-size: 16px; font-weight: 600; line-height: 1.5; padding: 0 200px; text-shadow: 0 0 10px rgba(146,117,76,0.83)}
+	.content h4 {
+		font-size: 16px; font-weight: 400; line-height: 1.5; padding: 0 200px; text-shadow: 0 0 10px rgba(146,117,76,0.83)}
+	.location-container {
+		display: flex; /* Use flexbox for alignment */
+   	 	align-items: center; /* Center items vertically */
+    	gap: 20px; /* Space between map and text */
+		justify-content: center}
+
+	.location-container iframe {
+    	flex-shrink: 0; /* Prevent the iframe from shrinking */
+    	width: 400px; /* Set a fixed width for the map */
+		height: 300px; /* Set a fixed height for the map */}
+	.location-container {
+   		display: flex; /* Use flexbox for alignment */
+    	align-items: center; /* Center items vertically */
+    	gap: 0px; /* Space between map and text */
+   	 	justify-content: center; /* Center horizontally */
+    	margin: 0 200px; /* Add margin for spacing on the sides */}
+
+	.milkpudding-container, .salivachicken-container {
+    	display: flex; /* Enable flexbox */
+    	align-items: center; /* Center items vertically */
+    	gap: 0px; /* Space between image and text */
+    	justify-content: center; /* Center horizontally */
+    	margin: 0 0 0 200px; /* Add margin for spacing on the sides */}
+	.salivachicken-container {
+		display: flex; /* Enable flexbox */
+    	align-items: center; /* Center items vertically */
+    	gap: 0px; /* Space between image and text */
+    	justify-content: center; /* Center horizontally */
+    	margin: 0 200 0 0px; /* Add margin for spacing on the sides */}
+	.milkpudding-container img,
+.salivachicken-container img {
+    width: 100%; /* Allow the image to take the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 250px; /* Set a maximum width to limit the size */
+    border-radius: 15px; /* Rounded corners */
+}
+	.location-container iframe {
+    flex-shrink: 0; /* Prevent the iframe from shrinking */
+    width: 400px; /* Set a fixed width for the map */
+    height: 300px; /* Set a fixed height for the map */
+    border: 0; /* Remove default border */
+    border-radius: 15px; /* Adjust the value for more or less rounding */
+}
+</style>	
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<img src="img/icon_lunchlab.svg" alt="Lunch Lab logo">
+			<span class="company-name">LUNCH LAB</span>
+		</div> 
+		<div class="menu">
+			<a href="#">home</a>
+			<a href="#">eateries</a>
+			<a href="#">contact</a>
+		</div>
+	</div>
+	<div class="content">
+		<div class="descrition">
+			<h1>Wada Bento</h1>
+			<h4>Welcome to the legendary bento vending machine, where deliciousness awaits—if you can survive the long queue! Each colorful bento box promises a taste sensation, but be prepared for the agony of potentially finding your favorite sold out.</h4>
+		</div>
+		<div class="lcoation">
+			<h2><span class="highlight">Location</span></h2>
+				<div class="location-container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59052.753893662266!2d114.18636473819222!3d22.3235113795462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340406ad58aab66b%3A0xb10e3fa4a2ef0fac!2z5Z-6552j5pWZ6IGv5ZCI6Yar6Zmi!5e0!3m2!1szh-TW!2shk!4v1741537373456!5m2!1szh-TW!2shk" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<h4>G/F, Block S, United Christian Hospital, 130 Hip Wo Street, Kwun Tong, Kowloon</h4>
+				</div>
+			</div>
+		<div class="recommendations">
+			<h2><span class="highlight">Recommendations</span></h2>
+			<div class="milkpudding-container">
+				<img src="img/bento_recommend1.jpg" alt="" style="width: 250px; height: 250px;">
+				<div class="pudding-word">
+					<h3>Yuzu Chicken and Beef Bento</h3>
+					<h4>“I found the self-service setup super cute and convenient, so I had to try it since the prices were great! 🍱💰 The fancy packaging even comes with chopsticks! 🥢 Plus, there's a paper inside to keep things fresh—how thoughtful! Both boxes feature cherry tomatoes and broccoli, with nice chewy rice. 🍅🥦 The first one has chicken and beef. The veggies are fresh, and the yuzu juice is super refreshing! For this price and quality, it’s a lunch miracle! 🙌”</h4>
+				</div>
+			</div>
+			<br>
+			<div class="salivachicken-container">
+				<img src="img/bento-recommend2.jpg.jpg" alt="" style="width: 250px; height: 250px;">
+				<div class="slivachicken-word">
+					<h3>Teriyaki Beef Ribs Bento</h3>
+					<h4>“Initially, I approached the bento machine with modest expectations, yet I frequently noticed long lines.🤔 Out of curiosity, I decided to try the Japanese teriyaki beef ribs. 🐮✨ What a delightful surprise! When I received my rice, it was still steaming!🍲 The portion of beef ribs was generous—definitely not stingy! The teriyaki flavor was perfectly balanced, not overly sweet. Truly a remarkable value!”</h4>
+					</div>
+			</div>
+		</div>
+		<br>
+	</div>
+</body>
+</html>

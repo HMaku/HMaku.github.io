@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lunchlab-home</title>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+	
+	body {
+		font-family: "Figtree", serif; font-size: 16px; margin: 0; padding: 0; color: rgba(50,39,20,1.00)}
+	.logo {
+		display: flex; align-items: center;}
+	.logo img {
+		height: 46px; margin-right: 20px; filter: brightness(0) invert(1); /* Makes the logo white */}
+	.company-name {
+        font-weight: 600; font-size: 30px; color: #F3F1E5; }
+    .navbar {
+        display: flex; justify-content: space-between; align-items: center;
+        background-color: rgba(146,117,76,0.83); 
+        font-size: 20px; font-weight: 200; color: #F3F1E5;
+        height: 80px; padding: 0 20px;
+        position: fixed; width: 100%; z-index: 999; }
+	.menu {
+		display: flex;}
+	.menu a {
+        color: #F3F1E5; text-decoration: none;
+        padding: 10px 20px; transition: background-color 0.4s ease-in-out; margin-right: 30px;}
+	
+        
+        
+	.menu a:hover {background-color: #B5B557}
+	.hero-section {
+		height: 100vh; background: linear-gradient(0deg, rgba(146,117,76,0.83),rgba(255, 204, 0, 0.2)), url("img/background_pink.jpg.webp") no-repeat center; background-size: cover; display: flex; flex-direction: column; align-items: center; text-align: 0.9; text text-shadow: 0 0 20px rgba(189,187,99,1.00); margin-bottom: 10px; justify-content: center; /* Center vertically */
+    	align-items: center; /* Center horizontally */}
+	.hero-section h1 {
+		font-size: 36px; font-weight: 100; line-height: 1.8; text-shadow: 0 0 10px rgba(146,117,76,0.83);}
+	.hero-section h3 {
+		font-size: 18px; font-weight: 400; line-height: 1.5; padding: 0 250px; text-shadow: 0 0 10px rgba(146,117,76,0.83)}
+	.cta-button {
+        background-color: rgba(179,181,87,1.00);
+        color: #FFF; padding: 16px 32px;
+        text-decoration: none; text-shadow: 2px 2px 5px rgba(146,117,76,0.83);
+        margin-top: 20px; border-radius: 16px;
+        font-size: 20px; font-weight: 600; }
+    .cta-button:hover {
+        background-color: #F3F1E5;
+        color: rgba(40,31,16,1.00);
+        text-shadow: 2px 2px 5px rgba(146,117,76,0.83);
+        transition: all 0.4s ease-in-out; }
+	
+</style>
+</head>
+	
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<img src="img/icon_lunchlab.svg" alt="Lunch Lab logo">
+			<span class="company-name">LUNCH LAB</span>
+		</div> 
+		<div class="menu">
+			<a href="#">home</a>
+			<a href="#">eateries</a>
+			<a href="#">contact</a>
+		</div>
+		
+	</div>
+	<div class="hero-section">
+		<h1>Lab Life: Where the Only Thing We <br>Analyze More Than Samples is Our Lunch Meals.</h1>
+		<h3>In the fast-paced world of laboratories, we know that lab staff need delicious fuel to stay sharp. Join us as we explore the best dining options near the hospital, from quick bites to hearty meals. Discover tasty spots that satisfy your cravings and keep you energized for your next experiment. Let’s savor every moment, one delicious find at a time!</h3>
+			<a href="#" class="cta-button">explore the eateries</a>
+	</div>
+		
+
+</body>
+</html>

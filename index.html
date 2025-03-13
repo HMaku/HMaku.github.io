@@ -2,14 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>lunnchlab-WelliMaxCatering</title>
-</head>
+<title>lunchlab-home</title>
+
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 	
 	body {
-		font-family: "Figtree", serif; font-size: 16px; margin: 0; padding: 0; color: rgba(50,39,20,1.00); margin: 0; /* Ensure no default margin */
-    padding: 0; /* Ensure no padding */}
+		font-family: "Figtree", serif; font-size: 16px; margin: 0; padding: 0; color: rgba(50,39,20,1.00)}
 	.logo {
 		display: flex; align-items: center;}
 	.logo img {
@@ -26,75 +25,33 @@
 		display: flex;}
 	.menu a {
         color: #F3F1E5; text-decoration: none;
-        padding: 10px 20px; transition: background-color 0.4s ease-in-out; margin-right: 30px;}  
-	.menu a:hover {background-color: #B5B557}
+        padding: 10px 20px; transition: background-color 0.4s ease-in-out; margin-right: 30px;}
 	
-	.content {
-    min-height: 100vh; /* Make sure content is at least the height of the viewport */
-    padding-top: 80px; /* Space for the fixed navbar */
-    background: linear-gradient(0deg, rgba(146,117,76,0.83), rgba(255, 204, 0, 0.2)), 
-                url("img/background_green_horizontal.jpg") no-repeat center center;
-    background-size: cover; /* Cover the entire area */
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; /* Allow content to start from the top */
-    overflow: hidden; /* Prevent overflow */
-}
-	.content h1 {
-		font-size: 36px; font-weight: 100; line-height: 1.5; text-shadow: 0 0 10px rgba(146,117,76,0.83); text-align: center;}
-	.content h2 {
-		font-size: 22px; font-weight: 200; line-height: 1.5; padding: 0 200px; text-shadow: 0 0 10px rgba(146,117,76,0.83); }
-	.content h2 .highlight {
-    	background-color: rgba(181, 181, 87, 0.72);
-    	padding: 0 10px; /* Optional: Add some horizontal padding for spacing */}
-	.content h3 {
-		font-size: 16px; font-weight: 600; line-height: 1.5; padding: 0 200px; text-shadow: 0 0 10px rgba(146,117,76,0.83)}
-	.content h4 {
-		font-size: 16px; font-weight: 400; line-height: 1.5; padding: 0 200px; text-shadow: 0 0 10px rgba(146,117,76,0.83)}
-	.location-container {
-		display: flex; /* Use flexbox for alignment */
-   	 	align-items: center; /* Center items vertically */
-    	gap: 20px; /* Space between map and text */
-		justify-content: center}
-
-	.location-container iframe {
-    	flex-shrink: 0; /* Prevent the iframe from shrinking */
-    	width: 400px; /* Set a fixed width for the map */
-		height: 300px; /* Set a fixed height for the map */}
-	.location-container {
-   		display: flex; /* Use flexbox for alignment */
-    	align-items: center; /* Center items vertically */
-    	gap: 0px; /* Space between map and text */
-   	 	justify-content: center; /* Center horizontally */
-    	margin: 0 200px; /* Add margin for spacing on the sides */}
-
-	.milkpudding-container, .salivachicken-container {
-    	display: flex; /* Enable flexbox */
-    	align-items: center; /* Center items vertically */
-    	gap: 0px; /* Space between image and text */
-    	justify-content: center; /* Center horizontally */
-    	margin: 0 0 0 200px; /* Add margin for spacing on the sides */}
-	.salivachicken-container {
-		display: flex; /* Enable flexbox */
-    	align-items: center; /* Center items vertically */
-    	gap: 0px; /* Space between image and text */
-    	justify-content: center; /* Center horizontally */
-    	margin: 0 200 0 0px; /* Add margin for spacing on the sides */}
-	.milkpudding-container img,
-.salivachicken-container img {
-    width: 250px; /* Maintain the width */
-    height: 250px; /* Maintain the height */
-    border-radius: 15px; /* Rounded corners */
-}
-	.location-container iframe {
-    flex-shrink: 0; /* Prevent the iframe from shrinking */
-    width: 400px; /* Set a fixed width for the map */
-    height: 300px; /* Set a fixed height for the map */
-    border: 0; /* Remove default border */
-    border-radius: 15px; /* Adjust the value for more or less rounding */
-}
-</style>	
+        
+        
+	.menu a:hover {background-color: #B5B557}
+	.hero-section {
+		height: 100vh; background: linear-gradient(0deg, rgba(146,117,76,0.83),rgba(255, 204, 0, 0.2)), url("img/background_pink.jpg.webp") no-repeat center; background-size: cover; display: flex; flex-direction: column; align-items: center; text-align: 0.9; text text-shadow: 0 0 20px rgba(189,187,99,1.00); margin-bottom: 10px; justify-content: center; /* Center vertically */
+    	align-items: center; /* Center horizontally */}
+	.hero-section h1 {
+		font-size: 36px; font-weight: 100; line-height: 1.8; text-shadow: 0 0 10px rgba(146,117,76,0.83);}
+	.hero-section h3 {
+		font-size: 18px; font-weight: 400; line-height: 1.5; padding: 0 250px; text-shadow: 0 0 10px rgba(146,117,76,0.83)}
+	.cta-button {
+        background-color: rgba(179,181,87,1.00);
+        color: #FFF; padding: 16px 32px;
+        text-decoration: none; text-shadow: 2px 2px 5px rgba(146,117,76,0.83);
+        margin-top: 20px; border-radius: 16px;
+        font-size: 20px; font-weight: 600; }
+    .cta-button:hover {
+        background-color: #F3F1E5;
+        color: rgba(40,31,16,1.00);
+        text-shadow: 2px 2px 5px rgba(146,117,76,0.83);
+        transition: all 0.4s ease-in-out; }
+	
+</style>
+</head>
+	
 <body>
 	<div class="navbar">
 		<div class="logo">
@@ -106,38 +63,14 @@
 			<a href="LunchLab-eateries.html">eateries</a>
 			<a href="LunchLab-contact.html">contact</a>
 		</div>
+		
 	</div>
-	<div class="content">
-		<div class="descrition">
-			<h1>WelliMax Catering</h1>
-			<h4>Welcome to our beloved canteen, the culinary rollercoaster of our workplace! This is the place where the food is as unpredictable as our QC results. While you might stumble upon a delicious siu mei, you’ll also face the infamous mystery special that has sparked more than a few debates over lunch.</h4>
-		</div>
-		<div class="lcoation">
-			<h2><span class="highlight">Location</span></h2>
-				<div class="location-container">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59042.183338883486!2d114.16346623853207!3d22.348475776629275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404070593c5e0db%3A0xd5ce733d66e166a5!2z5b-D6JaI576O!5e0!3m2!1szh-TW!2shk!4v1741535826582!5m2!1szh-TW!2shk" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					<h4>B2, Block S, United Christian Hospital, 130 Hip Wo Street, Kwun Tong, Kowloon</h4>
-				</div>
-			</div>
-		<div class="recommendations">
-			<h2><span class="highlight">Recommendations</span></h2>
-			<div class="milkpudding-container">
-				<img src="img/canteen_recommend2.jpg.webp" alt="" style="width: 250px; height: 250px;">
-				<div class="pudding-word">
-					<h3>Milk pudding</h3>
-					<h4>“Sure, it looks super ordinary, so if you're expecting Instagram gold, you might be disappointed 🙈. But the value is amazing! For just $8.x with a staff discount, you get a milk pudding that’s really smooth and creamy 😋. It’s way better than the jelly stuff from the supermarket and can totally compete with those $20 to $30 puddings! Plus, it’s huge—good luck finishing it after your meal 😂😂”</h4>
-				</div>
-			</div>
-			<br>
-			<div class="salivachicken-container">
-				<img src="img/canteen_recommend1.JPG" alt="" style="width: 250px; height: 250px;">
-				<div class="slivachicken-word">
-					<h3>Saliva Chicken Rice</h3>
-					<h4>“The food at United Christian Hospital is pretty affordable, and their saliva chicken rice is the star of the show—seriously delicious! 🍚😋 The chicken is so smooth it practically glides onto your plate, and they drizzle some sauce on it before serving. 🤤 It’s a steal and tastes like pure happiness! 🎉 Who knew hospital food could be this good?!”</h4>
-					</div>
-			</div>
-		</div>
-		<br>
+	<div class="hero-section">
+		<h1>Lab Life: Where the Only Thing We <br>Analyze More Than Samples is Our Lunch Meals.</h1>
+		<h3>In the fast-paced world of laboratories, we know that lab staff need delicious fuel to stay sharp. Join us as we explore the best dining options near the hospital, from quick bites to hearty meals. Discover tasty spots that satisfy your cravings and keep you energized for your next experiment. Let’s savor every moment, one delicious find at a time!</h3>
+			<a href="LunchLab-eateries.html" class="cta-button">explore the eateries</a>
 	</div>
+		
+
 </body>
 </html>

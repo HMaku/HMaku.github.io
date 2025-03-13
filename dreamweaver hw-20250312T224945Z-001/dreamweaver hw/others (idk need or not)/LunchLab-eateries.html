@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lunchlab-eateries</title>
+	
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+	
+	body {
+		font-family: "Figtree", serif; font-size: 16px; margin: 0; padding: 0; color: rgba(50,39,20,1.00)}
+	.logo {
+		display: flex; align-items: center;}
+	.logo img {
+		height: 46px; margin-right: 20px; filter: brightness(0) invert(1); /* Makes the logo white */}
+	.company-name {
+        font-weight: 600; font-size: 30px; color: #F3F1E5; }
+    .navbar {
+        display: flex; justify-content: space-between; align-items: center;
+        background-color: rgba(146,117,76,0.83); 
+        font-size: 20px; font-weight: 200; color: #F3F1E5;
+        height: 80px; padding: 0 20px;
+        position: fixed; width: 100%; z-index: 999; }
+	.menu {
+		display: flex;}
+	.menu a {
+        color: #F3F1E5; text-decoration: none;
+        padding: 10px 20px; transition: background-color 0.4s ease-in-out; margin-right: 30px}
+	.hero-section {
+		height: 100vh; 
+    	display: flex; /* Use flexbox */
+    	flex-direction: column; 
+    	justify-content: center; /* Center vertically */
+    	align-items: center; /* Center horizontally */background: linear-gradient(0deg, rgba(146,117,76,0.83), rgba(255, 204, 0, 0.2)), url("img/background_blue.jpg.webp") no-repeat center; 
+    	background-size: cover; 
+    	margin-bottom: 10px;
+		position: relative; /* For pseudo-elements */}
+	.hero-section:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1; /* Place the overlay behind the text */}
+
+	.hero-section h2 {
+    	font-size: 28px;
+    	font-weight: 600;
+    	line-height: 1.8;
+    	text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Lighter shadow */
+        color: #F3F1E5; /* White color for better contrast */
+		margin: 10px 0; /* Add some margin */}
+	.hero-section a {
+		text-decoration: none}
+	.eateries {
+    	display: flex; /* Use flexbox to align items in a row */
+    	justify-content: center; /* Center the images horizontally */
+    	gap: 200px; /* Optional: adds space between the images */
+		align-items: center; /* Center items horizontally */
+		text-align: center; /* Center text horizontally */
+	 	z-index: 2; /* Bring the content above the overlay */}
+	.eateries a {
+        transition: transform 0.3s; /* Smooth hover effect */}
+	.eateries a:hover {
+        transform: scale(1.1); /* Scale up on hover */}
+
+    .eateries img {
+        border-radius: 50%; /* Keep the circular shape */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow */}
+
+	
+</style>     
+   
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<img src="img/icon_lunchlab.svg" alt="Lunch Lab logo">
+			<span class="company-name">LUNCH LAB</span>
+		</div> 
+		<div class="menu">
+			<a href="LunchLab-home2.html">home</a>
+			<a href="LunchLab-eateries.html">eateries</a>
+			<a href="LunchLab-contact.html">contact</a>
+		</div>
+	</div>
+	<div class="hero-section">
+		<div class="eateries">
+			<a href="lunchlab-WelliMaxCatering.html"><img src="img/canteen_background.jpg" alt="Image of WelliMax Catering" style="width: 250px; height: 250px; border-radius: 50%;"><br><h2>WelliMax Catering</h2></a>
+
+			<a href="lunchlab-wadabento1.html"><img src="img/bento_background.JPG" alt="Image of Wada bento" style="width: 250px; height: 250px; border-radius: 50%;"><br><h2>Wada bento</h2></a>
+			
+		</div>
+		
+	</div>
+</body>
+</html>
